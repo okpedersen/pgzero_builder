@@ -1,0 +1,27 @@
+package:
+    name: pgzero
+    version: 1.0.2
+
+source:
+    fn: pgzero-1.0.2.tar.gz
+    md5: 9ecb2cc95edd010e0522bc3bbb29d4cc
+    url: https://pypi.python.org/packages/source/p/pgzero/pgzero-1.0.2.tar.gz#md5=9ecb2cc95edd010e0522bc3bbb29d4cc
+
+requirements:
+    build:
+        - python 3.4*
+        - numpy
+        - cython 0.22*
+    run:
+        - python 3.4*
+        - numpy
+        - cython 0.22*
+
+test:
+    imports:
+        - pygame
+        - pgzero
+        - numpy
+
+about:
+    summary: vg python build
